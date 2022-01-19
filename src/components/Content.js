@@ -1,17 +1,25 @@
 import React from 'react';
 import Part from '../common/Part'
+import Positive from '../common/Positive';
+import Total from '../common/Total';
 
-function Content({course}) {
-    const part1 = course.parts[0]
-    const part2 = course.parts[1]
-    const part3 = course.parts[2]
-    return (
-        <div>
-            <Part part={part1.name} exercises={part1.exercises}/>
-            <Part part={part2.name} exercises={part2.exercises}/>
-            <Part part={part3.name} exercises={part3.exercises}/>
-        </div>
-    );
+function Content({good, bad, neutral}) {
+    
+     if (good !==0 | bad!==0 | neutral!==0) {
+        return (
+            <div>
+                <Part title={'Good'} score={good}/>
+                <Part title={'Neutral'} score={neutral}/>
+                <Part title={'Bad'} score={bad}/>
+                <Total good={good} neutral={neutral} bad={bad}/>
+                <Positive good={good} neutral={neutral} bad={bad}/>
+            </div>
+        );
+     } else {
+        return (<div>
+             <p> No feedback given</p>
+         </div>);
+     }
 }
 
 export default Content;

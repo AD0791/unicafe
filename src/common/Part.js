@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Part({part,exercises}) {
+
+function Part({title,score}) {
     return (
         <p>
-        {part} {exercises}
+        {title} {score}
       </p>
     );
 }

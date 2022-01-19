@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Header({course}) {
+function Header({title}) {
     return (
-        <h1>{course.name}</h1>
+        <h1>{title}</h1>
     );
 }
 
