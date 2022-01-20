@@ -4,7 +4,7 @@ import ContentTable from './components/ContentTable';
 import Header from './components/Header';
 
 
-//TODO: stop at 1.10
+//TODO: stop at 1.12
 
 function App() {
   
