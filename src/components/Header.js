@@ -2,7 +2,11 @@ import React from 'react';
 
 function Header({title}) {
     return (
-        <h1>{title}</h1>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems:'center' }}>
+            <div>
+            <h1>{title}</h1>
+            </div>
+        </div>        
     );
 }
 

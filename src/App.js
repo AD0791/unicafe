@@ -4,8 +4,6 @@ import ContentTable from './components/ContentTable';
 import Header from './components/Header';
 
 
-//TODO: stop at 1.12
-
 function App() {
   
   const [good, setGood] = useState(0)

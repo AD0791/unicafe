@@ -7,9 +7,14 @@ function ContentTable({good, bad, neutral}) {
             <Table good={good} bad={bad} neutral={neutral}/>
         );
      } else {
-        return (<div>
-             <p> No feedback given</p>
-         </div>);
+        return (
+        
+        <div style={{display: 'flex', justifyContent: 'center', alignItems:'center' }}>
+            <div>
+                <p> No feedback given</p>
+            </div>
+            
+        </div>);
      }
 }
 
