@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Button from './components/Button';
-import Content from './components/Content';
+import ContentTable from './components/ContentTable';
 import Header from './components/Header';
 
 
@@ -38,7 +38,7 @@ function App() {
       <Button handler={handleNeutral} text={'neutral'}/>
       <Button handler={handleBad} text={'bad'}/>
       <Header title={'Statistics'}/>
-      <Content good={good} bad={bad} neutral={neutral}/>
+      <ContentTable good={good} bad={bad} neutral={neutral}/>
     </div>
   );
 }
